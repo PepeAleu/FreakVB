@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16A97D76-7A04-4B60-82E0-1A98A00B892B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Friki.My.MyApplication</StartupObject>
+    <RootNamespace>Friki</RootNamespace>
+    <AssemblyName>Friki</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Friki.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Friki.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaAventura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaAventura.Designer.vb">
+      <DependentUpon>AltaAventura.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaBitacora.Designer.vb">
+      <DependentUpon>AltaBitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaBitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDuelo.Designer.vb">
+      <DependentUpon>AltaDuelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaDuelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaEscenario.Designer.vb">
+      <DependentUpon>AltaEscenario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEscenario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMonstruo.Designer.vb">
+      <DependentUpon>AltaMonstruo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMonstruo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaPersonaje.Designer.vb">
+      <DependentUpon>AltaPersonaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaPersonaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaUniverso.Designer.vb">
+      <DependentUpon>AltaUniverso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaUniverso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdfriki.vb" />
+    <Compile Include="BuscarAventura.Designer.vb">
+      <DependentUpon>BuscarAventura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarAventura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarBitacora.Designer.vb">
+      <DependentUpon>BuscarBitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarBitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarEscenario.Designer.vb">
+      <DependentUpon>BuscarEscenario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarEscenario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarMonstruo.Designer.vb">
+      <DependentUpon>BuscarMonstruo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMonstruo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPersonaje.Designer.vb">
+      <DependentUpon>BuscarPersonaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPersonaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarUniverso.Designer.vb">
+      <DependentUpon>BuscarUniverso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarUniverso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesAventura.Designer.vb">
+      <DependentUpon>DetallesAventura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesAventura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesEscenario.Designer.vb">
+      <DependentUpon>DetallesEscenario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesEscenario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesMonstruo.Designer.vb">
+      <DependentUpon>DetallesMonstruo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesMonstruo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesPersonaje.Designer.vb">
+      <DependentUpon>DetallesPersonaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesPersonaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesUniverso.Designer.vb">
+      <DependentUpon>DetallesUniverso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesUniverso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duelo.Designer.vb">
+      <DependentUpon>Duelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Duelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Librerias.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneo.Designer.vb">
+      <DependentUpon>Torneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Torneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AltaAventura.resx">
+      <DependentUpon>AltaAventura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaBitacora.resx">
+      <DependentUpon>AltaBitacora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaDuelo.resx">
+      <DependentUpon>AltaDuelo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaEscenario.resx">
+      <DependentUpon>AltaEscenario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMonstruo.resx">
+      <DependentUpon>AltaMonstruo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaPersonaje.resx">
+      <DependentUpon>AltaPersonaje.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaUniverso.resx">
+      <DependentUpon>AltaUniverso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarAventura.resx">
+      <DependentUpon>BuscarAventura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarBitacora.resx">
+      <DependentUpon>BuscarBitacora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarEscenario.resx">
+      <DependentUpon>BuscarEscenario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMonstruo.resx">
+      <DependentUpon>BuscarMonstruo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPersonaje.resx">
+      <DependentUpon>BuscarPersonaje.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarUniverso.resx">
+      <DependentUpon>BuscarUniverso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesAventura.resx">
+      <DependentUpon>DetallesAventura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesEscenario.resx">
+      <DependentUpon>DetallesEscenario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesMonstruo.resx">
+      <DependentUpon>DetallesMonstruo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesPersonaje.resx">
+      <DependentUpon>DetallesPersonaje.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesUniverso.resx">
+      <DependentUpon>DetallesUniverso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duelo.resx">
+      <DependentUpon>Duelo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneo.resx">
+      <DependentUpon>Torneo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\Hombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DAO">
+      <Guid>{00025E01-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
